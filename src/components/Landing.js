@@ -1,0 +1,29 @@
+/* eslint-disable max-len */
+import React, { Component } from 'react';
+import Layout from './Layout';
+// import cosmos from './../assets/cosmos.jpg';
+
+export default class Landing extends Component {
+    state = { }
+
+    render() {
+      return (
+        <div>
+          {/* <img src={cosmos} alt="" width="100%" height="100%" /> */}
+          <Layout>
+            <h2>What are the signs of the times?</h2>
+            <hr />
+            <p>The signs of the times are events or experiences that God gives to people to show that something important in His work has happened or will soon happen. In the latter days, many signs for the Second Coming of the Savior have been prophesied. These signals allow faithful people to recognize God’s plan, be warned, and prepare.</p>
+            <h2>What are other names of the signs of the times?</h2>
+            <hr />
+            <p>Apocalypse, End of the world, Armageddon, Final battle between good and evil, Day of reckoning, Day of judgement, Ragnarok - Norse, Hindu - Kali Yuga, Muslim - al-Qiyamah, Jewish - Yom Adoni, Frasokereti,  Buddhist -Maitreya</p>
+
+            <hr />
+            <p>For thousands of years, followers of Jesus Christ have looked forward to the Second Coming as a time of peace and joy. But before the Savior comes, the people of the earth will experience great trials and calamities. Our Heavenly Father wants us to be prepared for these troubles. He also expects us to be spiritually ready when the Savior comes in His glory. Therefore, He has given us signs, which are events that will tell us when the Savior’s Second Coming is near. Throughout the ages God has revealed these signs to His prophets. He has said that all faithful followers of Christ will know what the signs are and will be watching for them (see D&C 45:39). If we are obedient and faithful, we will study the scriptures and know of the signs.</p>
+            <p>Some of the signs foretelling the Second Coming of Jesus Christ have already been or are now being fulfilled. Others will be fulfilled in the future.</p>
+
+          </Layout>
+        </div>
+      );
+    }
+}

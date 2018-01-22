@@ -1,5 +1,53 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Cinzel Decorative', serif;
+  text-transform: capitalize;
+  color: #eae1b8;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.9);
+  letter-spacing: 2px;
+  text-align: center;
+  background: linear-gradient(to bottom, #16100a 0%,#58493b 100%);
+  box-shadow: 0 0px 10px black;
+  min-height: 70px;
+  border-bottom: 1px solid #a79759;
+}
+
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.layout {
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 125px;
+}
+
+.layout p {
+  text-align: justify;
+  line-height: 150%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .layout {
+    padding: 25px 12px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .layout {
+    padding: 25px 12px;
+    margin-top: 150px;
+  }
 }

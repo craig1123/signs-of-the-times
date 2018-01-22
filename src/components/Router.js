@@ -14,22 +14,51 @@ const MyLoadingComponent = (props) => {
   return null;
 };
 
-const AsyncLanding = Loadable({
-  loader: () => import('./landing/Landing'),
-  loading: MyLoadingComponent,
-  timeout: 12000, // 12 seconds
-  delay: 50,
-});
 const AsyncFourOFour = Loadable({
   loader: () => import('./FourOFour'),
   loading: MyLoadingComponent,
-  timeout: 12000, // 12 seconds
+  timeout: 12000,
+  delay: 50,
+});
+const AsyncLanding = Loadable({
+  loader: () => import('./Landing'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
+  delay: 50,
+});
+const AsyncContact = Loadable({
+  loader: () => import('./Contact'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
+  delay: 50,
+});
+const AsyncHasHappened = Loadable({
+  loader: () => import('./happen/HasHappened'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
+  delay: 50,
+});
+const AsyncIsHappening = Loadable({
+  loader: () => import('./happen/IsHappening'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
+  delay: 50,
+});
+const AsyncWillHappen = Loadable({
+  loader: () => import('./happen/WillHappen'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
   delay: 50,
 });
 
 const Router = () => (
   <Switch>
     <Route exact path="/" component={AsyncLanding} />
+    <Route exact path="/has-happened" component={AsyncHasHappened} />
+    <Route exact path="/is-happening" component={AsyncIsHappening} />
+    <Route exact path="/will-happen" component={AsyncWillHappen} />
+    <Route exact path="/contact" component={AsyncContact} />
+    <Route path="/topics/:id" component={AsyncLanding} />
     <Route component={AsyncFourOFour} />
   </Switch>
 );

@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Men have always concerned themselves with the end of the world and the signs that precede. All the signs that precede the second coming of Jesus Christ are contained here.">
-    <meta name="keywords" content="">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Men have always concerned themselves with the end of the world and the signs that precede. All the signs that precede the second coming of Jesus Christ are contained here.">
+  <meta name="keywords" content="">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 
-    <title>Signs Of The Times</title>
+  <title>Signs Of The Times</title>
 
-    <style>
-    html,body,div,a,img,header{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
-    html, body {
-      margin: 0;
-      padding: 0;
-      line-height:1;
-      font-family: sans-serif;
-      color: #525252;
-      position: relative;
-      background: #faf9f9;
-      height: 100%;
+  <style>
+  html,body,div,a,header{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+  body {
+    margin: 0;
+    padding: 0;
+    line-height:1;
+    font-family: Palatino, Georgia, serif;
+    color: #525252;
+    position: relative;
+    background: #EFEDE6;
+    height: 100%;
+  }
+  a {
+    color: inherit;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid #E9E6E2;
+  }
+  button:focus {
+    outline:0;
+  }
+  .disclaimer {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .copyright {
+    color: #A29281;
+    padding: 0 0 15px;
+    font-size: 11px;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    p {
+      margin: 0 0 20px;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
+  }
+  @media (min-width: 769px) {
+    .container {
+      width: 750px;
     }
-    button:focus {
-      outline:0;
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
     }
-    </style>
+  }
+  @media screen and (max-width: 768px) {
+    p {
+      margin: 0 0 16px;
+    }
+  }
+  </style>
   </head>
   <body>
     <noscript>
-      <h2>Please enable javascript to search for the signs of the times</h2>
+      <div class="container">
+        <h2>Please enable javascript to search for the signs of the times</h2>
+      </div>
     </noscript>
     <div id="root"></div>
+    <footer>
+      <div class="container">
+        <p class="disclaimer">Signs-of-the-times is entirely owned, and maintained by <a href="https://craig1123.github.io/">Craig Walker</a>. This website is not affiliated with The Church of Jesus Christ of Latter-day Saints (also called the Mormon Church or LDS Church). Official information about The Church of Jesus Christ of Latter-day Saints can be found at <a href="http://www.lds.org/" target="_blank" rel="noreferrer">LDS.org</a> or <a href="http://www.mormon.org/" target="_blank" rel="noreferrer">Mormon.org</a>.</p>
+        <p class="copyright">&copy; 2018 <a href="https://craig1123.github.io/">Craig Walker</a>, All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
