@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import Router from './components/Router';
 import Header from './components/Header';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Router />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Fragment>
+    <Header />
+    <Router />
+  </Fragment>
+);
 
 export default App;

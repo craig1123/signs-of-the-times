@@ -7,7 +7,7 @@ export default class WillHappen extends Component {
     render() {
       return (
         <Layout>
-          <h2>Will Happen</h2>
+          <h2>Signs That Will Happen</h2>
 
         </Layout>
       );

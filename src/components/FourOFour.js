@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Layout from './Layout';
 
 export default class FourOFour extends Component {
   static defaultProps = {
@@ -9,12 +10,11 @@ export default class FourOFour extends Component {
   render() {
     const { message } = this.props;
     return (
-      <div className="four-o-four">
+      <Layout>
         <h1>404 Not Found</h1>
 
         <p>{message}</p>
-
-      </div>
+      </Layout>
     );
   }
 }

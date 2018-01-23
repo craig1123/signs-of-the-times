@@ -7,7 +7,7 @@ export default class IsHappening extends Component {
     render() {
       return (
         <Layout>
-          <h2>Is Happening</h2>
+          <h2>Signs That Are Happening</h2>
 
         </Layout>
       );

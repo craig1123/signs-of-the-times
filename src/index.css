@@ -17,21 +17,26 @@ header {
 header a {
   text-decoration: none;
 }
-header a:hover {
-  color: #fff;
-}
 
 nav {
   display: flex;
   justify-content: space-around;
+}
+nav a {
+  padding: 7px 0;
+  margin: 0 7px;
+}
+nav a.active {
+  border-bottom: 2px solid #eae1b8;
 }
 
 .layout {
   background: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 25px;
-  margin-top: 125px;
+  padding: 24px;
+  margin-top: 150px;
+  margin-bottom: 24px;
 }
 
 .layout p {
@@ -48,6 +53,6 @@ nav {
 @media screen and (max-width: 481px) {
   .layout {
     padding: 25px 12px;
-    margin-top: 150px;
+    margin-top: 175px;
   }
 }

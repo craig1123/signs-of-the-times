@@ -20,8 +20,8 @@ const AsyncFourOFour = Loadable({
   timeout: 12000,
   delay: 50,
 });
-const AsyncLanding = Loadable({
-  loader: () => import('./Landing'),
+const AsyncHome = Loadable({
+  loader: () => import('./Home'),
   loading: MyLoadingComponent,
   timeout: 12000,
   delay: 50,
@@ -53,12 +53,12 @@ const AsyncWillHappen = Loadable({
 
 const Router = () => (
   <Switch>
-    <Route exact path="/" component={AsyncLanding} />
+    <Route exact path="/" component={AsyncHome} />
     <Route exact path="/has-happened" component={AsyncHasHappened} />
     <Route exact path="/is-happening" component={AsyncIsHappening} />
     <Route exact path="/will-happen" component={AsyncWillHappen} />
     <Route exact path="/contact" component={AsyncContact} />
-    <Route path="/topics/:id" component={AsyncLanding} />
+    <Route path="/topics/:id" component={AsyncHome} />
     <Route component={AsyncFourOFour} />
   </Switch>
 );

@@ -7,7 +7,7 @@ export default class HasHappened extends Component {
     render() {
       return (
         <Layout>
-          <h2>Has Happened</h2>
+          <h2>Signs That Have Happened</h2>
 
         </Layout>
       );
