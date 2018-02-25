@@ -21,7 +21,7 @@ const AsyncFourOFour = Loadable({
   delay: 50,
 });
 const AsyncHome = Loadable({
-  loader: () => import('./Home'),
+  loader: () => import('./home/Home'),
   loading: MyLoadingComponent,
   timeout: 12000,
   delay: 50,
