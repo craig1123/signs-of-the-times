@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'react-router-dom/Link';
 
-const Header = () => {
+export default () => {
   const tab = window.location.pathname;
   return (
     <header>
-      <h1>
+      <h1 style={h1}>
         <Link to="/">Signs Of The Times</Link>
       </h1>
       <nav>
@@ -23,4 +23,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+const h1 = { marginBottom: '5px' };

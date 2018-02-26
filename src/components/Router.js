@@ -32,6 +32,12 @@ const AsyncContact = Loadable({
   timeout: 12000,
   delay: 50,
 });
+const AsyncSpecificTopic = Loadable({
+  loader: () => import('./SpecificTopic'),
+  loading: MyLoadingComponent,
+  timeout: 12000,
+  delay: 50,
+});
 const AsyncHasHappened = Loadable({
   loader: () => import('./happen/HasHappened'),
   loading: MyLoadingComponent,
@@ -58,7 +64,7 @@ const Router = () => (
     <Route exact path="/is-happening" component={AsyncIsHappening} />
     <Route exact path="/will-happen" component={AsyncWillHappen} />
     <Route exact path="/contact" component={AsyncContact} />
-    <Route path="/topics/:id" component={AsyncHome} />
+    <Route path="/topics/:id" component={AsyncSpecificTopic} />
     <Route component={AsyncFourOFour} />
   </Switch>
 );
